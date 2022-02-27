@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link href="/dist/output.css" rel="stylesheet" />
+		<script src="/js/script.js" defer></script>
+
+		<title>Frontend Mentor | Advice generator app</title>
+	</head>
+	<body>
+		<main
+			class="
+				bg-slate-800
+				h-screen
+				mx-auto
+				flex
+				justify-center
+				items-center
+				p-96
+			"
+		>
+			<div
+				class="
+					relative
+					text-white
+					flex
+					justify-center
+					items-center
+					flex-col
+					p-12
+					pb-24
+					bg-gray-700
+					rounded-lg
+				"
+			>
+				<h2
+					class="
+						advice-id
+						text-green-300
+						uppercase
+						text-sm
+						mb-8
+						tracking-widest
+					"
+				>
+					Advice #
+				</h2>
+				<!-- Advice ID goes here -->
+
+				<h3 class="advice-title text-gray-300 text-3xl mb-8">""</h3>
+				<figure>
+					<img
+						src="/images/pattern-divider-desktop.svg"
+						alt="pattern divider"
+					/>
+				</figure>
+				<button
+					type="submit"
+					onClick="refreshPage()"
+					class="
+						dice
+						bg-green-300
+						p-6
+						absolute
+						-bottom-8
+						rounded-full
+						hover:bg-white
+					"
+				>
+					<img
+						class="hover:fill-white"
+						src="/images/icon-dice.svg"
+						alt="dice icon"
+					/>
+				</button>
+			</div>
+		</main>
+	</body>
+</html>
